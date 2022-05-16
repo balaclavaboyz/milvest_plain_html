@@ -1,17 +1,63 @@
-html{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 body {
-  max-width: 800px;
+  max-width: 1024px;
   margin-right: auto;
   margin-left: auto;
+}
+#footer {
+  font-size: small;
+  text-align: center;
 }
 
 #menu {
   display: flex;
   gap: 5em;
+  place-content: center;
+  margin: 3em 0 0 0;
 }
 #menu > a {
   text-decoration: none;
-  color: black;
+  color: #111;
+  font-size: 1.5em;
+  font-family: "Helvetica Neue", sans-serif;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+#titulo {
+  color: #111;
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+#subtitulo {
+  text-align: center;
+  color: #111;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+  margin: 0 0 72px;
+  text-align: center;
+}
+#gal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+#gal > li {
+  height: 40vh;
+  flex-grow: 1;
+  list-style-type: none;
+}
+#gal > li>a > img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: contain;
+  vertical-align: bottom;
+}
+#gal > li:last-child {
+  flex-grow: 10;
 }
