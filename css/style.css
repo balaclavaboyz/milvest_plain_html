@@ -15,7 +15,7 @@ body {
   right: 24px;
   bottom: 16px;
   z-index: 999;
-  width: 3vw;
+  width: 48px;
 }
 .desktop{
     max-width: 1024px;
