@@ -1,31 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+    margin: 16px 16px;
+}
 body {
-  max-width: 1024px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 100%;
+  min-height: 100vh;
+}
+.desktop{
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.titulo-principal {
+  text-align: center;
+  color: #111;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  line-height: 1;
+  font-family: Arial, sans-serif;
+  margin: 0 0;
+  padding: 0;
 }
 #footer {
   font-size: small;
   text-align: center;
+  padding: 0;
 }
 
 #menu {
   display: flex;
-  gap: 5em;
+  gap: 5rem;
   place-content: center;
-  margin: 3em 0 0 0;
+  margin: 1.5rem 0 0 0;
+  padding: 0;
 }
 #menu > a {
   text-decoration: none;
   color: #111;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-family: "Helvetica Neue", sans-serif;
   letter-spacing: -1px;
   line-height: 1;
   text-align: center;
 }
-#titulo {
+.titulo {
+  margin: 1rem 0;
   color: #111;
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: bold;
   letter-spacing: -1px;
   line-height: 1;
@@ -36,23 +61,93 @@ body {
   text-align: center;
   color: #111;
   font-family: "Open Sans", sans-serif;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 32px;
   margin: 0 0 72px;
   text-align: center;
 }
+#faq-titulo {
+  color: #111;
+  font: 3rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+.faq-sub {
+  color: #111;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+}
+.faq-p {
+  color: #111;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.faq-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.politica-t {
+  color: #111;
+  font: 3rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+.politica-h2 {
+  color: #111;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 32px;
+}
+.politica-text {
+  color: #111;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: justify;
+  text-justify: inter-word;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.politica-text>ul>li{
+    text-indent: 50px;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+.politica-text>.row{
+    display: flex;
+    gap: 2rem;
+}
+p{
+    text-indent: 50px;
+}
 #gal {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 1rem;
+  padding: 0;
 }
 #gal > li {
   height: 40vh;
   flex-grow: 1;
   list-style-type: none;
 }
-#gal > li>a > img {
+#gal > li > a > img {
   max-height: 100%;
   min-width: 100%;
   object-fit: contain;
@@ -60,4 +155,29 @@ body {
 }
 #gal > li:last-child {
   flex-grow: 10;
+}
+@media screen and (max-width: 1024px) {
+  #gal > li {
+    height: 100vw;
+  }
+  #menu {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  #titulo {
+    margin-bottom: 1rem;
+  }
+  html {
+    margin: 16px 16px;
+  }
+  .titulo{
+      font-size: 2rem;
+  }
+  #subtitulo{
+      margin-top: 1.5rem;
+  }
 }
