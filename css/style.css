@@ -10,6 +10,13 @@ body {
   width: 100%;
   min-height: 100vh;
 }
+.whatsapp{
+  position: fixed;
+  right: 24px;
+  bottom: 16px;
+  z-index: 999;
+  width: 3vw;
+}
 .desktop{
     max-width: 1024px;
     margin-right: auto;
